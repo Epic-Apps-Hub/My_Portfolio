@@ -202,7 +202,7 @@ p {
 
 /* Hero Section */
 #hero {
-    background-image: url('images/luca-bravo-9l_326FISzk-unsplash.jpg');	background-size: cover;
+    background-image: url('images/1.jpg');	background-size: cover;
 	background-position: top center;
 	position: relative;
 	z-index: 1;
@@ -215,7 +215,7 @@ p {
 	height: 100%;
 	width: 100%;
 	background-color: black;
-	opacity: .7;
+	opacity: .3;
 	z-index: -1;
 }
 #hero .hero {
