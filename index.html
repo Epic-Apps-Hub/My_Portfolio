@@ -1,349 +1,402 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mahmoud Atef - Flutter Developer</title>
     <link rel="stylesheet" href="style.css">
-    <title>Portfolio</title>
+    <link rel="icon" href="images/favicon.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <script>
+        function openResumeModal() {
+            document.getElementById('resumeModal').style.display = 'block';
+        }
+
+        function closeResumeModal() {
+            document.getElementById('resumeModal').style.display = 'none';
+        }
+    </script>
 </head>
 
 <body>
     <!-- Header -->
-    <section id="header">
-        <div class="header container">
-            <div class="nav-bar">
-                <div class="brand">
-                    <a href="#hero">
-                        <h1><span>M</span>ahmoud<span> A</span>tef</h1>
-                    </a>
-                </div>
-                <div class="nav-list">
-                    <div class="hamburger">
-                        <div class="bar"></div>
+    <header id="header">
+        <nav class="container">
+            <div class="logo code-font">&lt;M.Atef /&gt;</div>
+            <ul class="nav-links">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="mobile-menu-btn">☰</button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Hello, I'm <span class="highlight">Mahmoud Atef</span></h1>
+                    <p class="subtitle code-font">$ flutter_developer --experience=4_years</p>
+                    <p class="description">
+                        Passionate Flutter developer specializing in cross-platform mobile applications. 
+                        I build scalable, efficient apps for Android and iOS with modern UI/UX design and 
+                        robust backend integration.
+                    </p>
+                    <div class="cta-buttons">
+                        <a href="#" class="btn btn-primary" onclick="openResumeModal()">View Resume</a>
+                        <a href="#contact" class="btn btn-secondary">Get In Touch</a>
                     </div>
-                    <ul>
-                        <li><a href="#hero" data-after="Home">Home</a></li>
-                        <li><a href="#services" data-after="Services">Services</a></li>
-                        <li><a href="#projects" data-after="Projects">Projects</a></li>
-                        <li><a href="#about" data-after="About">About</a></li>
-                        <li><a href="#contact" data-after="Contact">Contact</a></li>
-                    </ul>
+                </div>
+                <div class="hero-visual">
+                    <div class="code-editor">
+                        <div class="line"><span class="comment">// Flutter Developer</span></div>
+                        <div class="line"><span class="keyword">class</span> <span class="function">MahmoudAtef</span> {</div>
+                        <div class="line">&nbsp;&nbsp;<span class="keyword">final</span> <span class="variable">skills</span> = [</div>
+                        <div class="line">&nbsp;&nbsp;&nbsp;&nbsp;<span class="string">'Flutter'</span>,</div>
+                        <div class="line">&nbsp;&nbsp;&nbsp;&nbsp;<span class="string">'Firebase'</span>,</div>
+                        <div class="line">&nbsp;&nbsp;&nbsp;&nbsp;<span class="string">'Node.js'</span>,</div>
+                        <div class="line">&nbsp;&nbsp;&nbsp;&nbsp;<span class="string">'API Integration'</span></div>
+                        <div class="line">&nbsp;&nbsp;];</div>
+                        <div class="line">&nbsp;&nbsp;</div>
+                        <div class="line">&nbsp;&nbsp;<span class="keyword">int</span> <span class="variable">experience</span> = <span class="string">4</span>;</div>
+                        <div class="line">}</div>
+                    </div>
                 </div>
             </div>
         </div>
-    </section>
-    <!-- End Header -->
-
-
-    <!-- Hero Section  -->
-    <section id="hero">
-        <div class="hero container">
-            <div>
-                <h1>Hello, <span></span></h1>
-                <h1>My Name is <span></span></h1>
-                <h1>Mahmoud Atef<span></span></h1>
-                <a href="#services" type="button" class="cta">Portfolio</a>
+         <div id="resumeModal" class="resume-modal">
+        <div class="resume-modal-content">
+            <span class="close-modal" onclick="closeResumeModal()">&times;</span>
+            <div class="modal-header">
+                <h2>Resume</h2>
+                <a href="https://drive.google.com/file/d/1jS1oLskZDagqOH0HywGsNEw_qTpHnxv0/view?usp=sharing" target="_blank" class="btn btn-download">Download PDF</a>
+            </div>
+            <div class="resume-viewer">
+                <iframe src="https://drive.google.com/file/d/1jS1oLskZDagqOH0HywGsNEw_qTpHnxv0/preview" title="Mahmoud Atef Resume" frameborder="0"></iframe>
             </div>
         </div>
+    </div>
     </section>
-    <!-- End Hero Section  -->
 
-    <!-- Service Section  -->
-
-    <section id="services">
-        <div class="services container">
-            <div class="service-top">
-                <h1 class="section-title">Serv<span>i</span>ces</h1>
-                <p>Flutter app developement for both android and IOS Flutter is an open-source UI software development kit created by Google. It is used to develop applications for Android, iOS, Linux, Mac, Windows, Google Fuchsia, and the web from a single
-                    codebase. but most used in Mobile Development</p>
-            </div>
-            <div class="service-bottom">
-                <div class="service-item">
-                    <div class="icon"><img src="images/ficon.png" /></div>
-                    <h2>Flutter Development</h2>
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">Services</h2>
+            <p class="section-subtitle">
+                Flutter app development for both Android and iOS. Flutter is an open-source UI software development 
+                kit created by Google. It is used to develop applications for Android, iOS, Linux, Mac, Windows, 
+                Google Fuchsia, and the web from a single codebase.
+            </p>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <img src="images/ficon.png" alt="Flutter" />
+                    </div>
+                    <h3>Flutter Development</h3>
                     <p>Flutter is an open-source UI software development kit created by Google. It is used to develop applications for Android, iOS, Linux, Mac, Windows, Google Fuchsia, and the web from a single codebase</p>
                 </div>
-                <div class="service-item">
-                    <div class="icon"><img src="images/firebase.png" /></div>
-                    <h2>Firebase integration</h2>
-                    <p>Firebase is a platform developed by Google for creating mobile and web applications. It allows us to add (Admob - firestore - Cloud funcions - Authentication And much more to our app) it's The best backend as a service
-                    </p>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <img src="images/firebase.png" alt="Firebase" />
+                    </div>
+                    <h3>Firebase Integration</h3>
+                    <p>Firebase is a platform developed by Google for creating mobile and web applications. It allows us to add (Admob - firestore - Cloud functions - Authentication And much more to our app) it's The best backend as a service</p>
                 </div>
-                <div class="service-item">
-                    <div class="icon"><img src="images/api.png" /></div>
-                    <h2>API integration</h2>
-                    <p>API is the acronym for Application Programming Interface, which is a software intermediary that allows two applications to talk to each other. Each time you use an app like Facebook, send an instant message, or check the weather on
-                        your phone, you're using an API.</p>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <img src="images/api.png" alt="API" />
+                    </div>
+                    <h3>API Integration</h3>
+                    <p>API is the acronym for Application Programming Interface, which is a software intermediary that allows two applications to talk to each other. Each time you use an app like Facebook, send an instant message, or check the weather on your phone, you're using an API.</p>
                 </div>
-
             </div>
         </div>
     </section>
-    <!-- End Service Section -->
-
-    <!-- End Service Section -->
-
-    <!-- Projects Section -->
-    <section id="projects">
-        <div class="projects container">
-            <div class="projects-header">
-                <h1 class="section-title">Recent <span>Projects</span>  (old to new)</h1>
-
-            </div>
-            <div class="all-projects">
-                <div class="project-item">
-                    <div class="project-info">
-                        <h1>Project 1</h1>
-                        <h2>Wordpress App</h2>
-                        <p>an app based on wordpress api that fetches the data from a wordpress blog, this app includes a lot of features like multitheme, multilanguage, Firebase push notifications, one signal notifications, and etcetera!
-                        </p> <a href="https://drive.google.com/file/d/1zr0fmcaJxRU8CR4JfayvfTAG0bsINJHi/view?fbclid=IwAR24DWmngqMLmPTNIphCDXZUyU0KDQYz0m9W8ygmW2N3Hjt4xud5DdBPcLU" target="_blank" class="cta">Apk</a>
-                    </div>
-                    <div class="project-img">
-                        <img src="images/projImages/photo1.jpg" alt="img">
-                    </div>
+  <!-- Projects Section -->
+<section id="projects" class="projects">
+    <div class="container">
+        <div class="projects-header">
+            <h2 class="section-title">Recent <span>Projects</span> (Old to New)</h2>
+        </div>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="images/projImages/photo1.jpg" alt="Wordpress App Screenshot" />
                 </div>
-                <div class="project-item">
-                    <div class="project-info">
-                        <h1>Project 2</h1>
-                        <h2>flutter login ui kit</h2>
-                        <p>created 8 flutter login ui ready to Be connected with the backend service using firebase authentication or any alternative!</p> <a href="https://drive.google.com/file/d/1yDr-ntehkuQ6v6plJotpEBTNk-eK4b0W/view?usp=sharing" target="_blank"
-                            class="cta">Apk</a>
-                    </div>
-                    <div class="project-img">
-                        <img src="images/projImages/photo2.jpg">
-                    </div>
-                </div>
-                <div class="project-item">
-                    <div class="project-info">
-                        <h1>Project 3</h1>
-                        <h2>News Api App</h2>
-                        <p>created An app based on Newsapi.org that fetches data from the api and display them generally and by category and by keyword search, this api provides a url for each News post and i ve used webview for that!
-                        </p>
-                        <a href="https://drive.google.com/file/d/12GWMGNu0CbrtUL3sApXcNH9_pvl-iEWa/view?usp=sharing" target="_blank" class="cta">Apk</a>
-                    </div>
-                    <div class="project-img">
-                        <img src="images/projImages/photo3.jpg">
-                    </div>
-                </div>
-                <div class="project-item">
-                    <div class="project-info">
-                        <h1>Project 4</h1>
-                        <h2>MyApps Website App</h2>
-                        <p>An app based on an api from this website ( www.myapps.cc ) for a client. This app was made just to fetch data, launch urls, show beautiful animations, and showing admob ads.!</p>
-                        <a href="https://play.google.com/store/apps/details?id=com.myappsappforsaud.demo" target="_blank" class="cta">Apk</a>
-                    </div>
-                    <div class="project-img">
-                        <img src="images/projImages/photo4.jpg" alt="img">
-                    </div>
-                </div>
-                <div class="project-item">
-                    <div class="project-info">
-                        <h1>Project 5</h1>
-                        <h2>World Map App</h2>
-                        <p>Created an app allows user to show the data of any country using an open source api ( https://restcountries.eu/rest/v2/all ) This app is using the http request to fetch the data from the api and showing everything about every country
-                            like: it's size, it's capital, location using Google maps api, and etcetera.!</p>
-                        <a href="https://drive.google.com/file/d/1StXsmp10egpQgOjlz8rLgX6Yf7V7YcxO/view?usp=sharing" target="_blank" class="cta">Apk</a>
-                    </div>
-                    <div class="project-img">
-                        <img src="images/projImages/photo5.jpg" alt="img">
-                    </div>
-                </div>
-                <div class="project-item">
-                    <div class="project-info">
-                        <h1>Project 6</h1>
-                        <h2>Quraan Mp3 App</h2>
-                        <p>Created an app for a client allows user to play mp3 quran for almost 120 reciter The data is coming from an open source api from mp3quran.net website The app is made using assets audio player package and it includes interstitial
-                            ads and paypal donation by launching url.!</p>
-                        <a href="https://mega.nz/file/AwUgAbaJ?fbclid=IwAR3KzOS33a4nlE0_5qsbeH0uEbjqTbQLw7wPbHMhHmADBL3qX8za3BfG-nw#NZmnEdlv-aOAT2x_vHpyHWJ3rFAVX0PaxqWoSO-Dp_g" target="_blank" class="cta">Apk</a>
-                    </div>
-                    <div class="project-img">
-                        <img src="images/projImages/photo6.jpg" alt="img">
-                    </div>
-                </div>
-                <div class="project-item">
-                    <div class="project-info">
-                        <h1>Project 7</h1>
-                        <h2>Pets App</h2>
-                        <p>an app for showing info about pets, clinics, doctors, and products.!</p>
-                        <a href="https://drive.google.com/file/d/15CeH49e87Hn87H1RH4-zDP8cAdwdzC84/view?usp=sharing" target="_blank" class="cta">Apk</a>
-                    </div>
-                    <div class="project-img">
-                        <img src="images/projImages/photo7.jpg" alt="img">
-                    </div>
-                </div>
-                <div class="project-item">
-                    <div class="project-info">
-                        <h1>Project 8</h1>
-                        <h2>E-Commerce App</h2>
-                        <p>created an app as practice based on nodejs API as backend and flutter as front end, both front and back by me.!</p>
-                        <a href="https://drive.google.com/file/d/1fWH5XRQO6kvncHVbFesddSR1Qd1vwvtG/view?fbclid=IwAR3Dvb5JB0KexaawRt08x-K7gPar71HCZETCu7AnTy7giumUw2SqpunD57U" target="_blank" class="cta">Apk</a>
-                    </div>
-                    <div class="project-img">
-                        <img src="images/projImages/photo8.jpg" alt="img">
-                    </div>
-                </div>
-                <div class="project-item">
-                    <div class="project-info">
-                        <h1>Project 9</h1>
-                        <h2>HomeMeals App</h2>
-                        <p>created an app for a client based on his website for ordering food!</p>
-                        <a href="https://drive.google.com/file/d/16fTFkr0Jq2JYpMZCt3k7XezrnyIwYeIB/view" target="_blank" class="cta">Apk</a>
-                    </div>
-                    <div class="project-img">
-                        <img src="images/projImages/photo9.jpg" alt="img">
-                    </div>
-                </div>
-                <div class="project-item">
-                    <div class="project-info">
-                        <h1>Project 10</h1>
-                        <h2>Novels app for a famous Egyptian writer</h2>
-                        <p>created an app for a novels writer named islam mahmoud, the app is connected to an api created with nodejs by me, there is another admin app to publish novels, delete, edit and operate everything needed, the app has a rewarding
-                            ads option to earn money which is connected to the api and editable from the admin app, the app includes referal or invitation system when you invite a friend you take .1 of what he earns!</p>
-                        <a href="https://play.google.com/store/apps/details?id=com.app.rewayat_alkateb_islam" target="_blank" class="cta">Apk</a>
-                    </div>
-                    <div class="project-img">
-                        <img src="images/projImages/photo10.jpg" alt="img">
-                    </div>
-                </div>
-                <div class="project-item">
-                    <div class="project-info">
-                        <h1>Project 11</h1>
-                        <h2>Wallpaper App</h2>
-                        <p>Created an app and api to get wallpapers from various websites like unsplash, pixels, reddit, i created the app for myself and uploaded it on my own google play developer account</p>
-                        <a href="https://play.google.com/store/apps/details?id=com.wool" target="_blank" class="cta">Apk</a>
-                    </div>
-                    <div class="project-img">
-                        <img src="images/projImages/photo11.PNG" alt="img">
-                    </div>
-                </div>
-                <div class="project-item">
-                    <div class="project-info">
-                        <h1>Project 12</h1>
-                        <h2>Skoon Islamic app</h2>
-                        <p>Created an Islamic app that contains all the features any islamic app would have, quran like the real quran, sharing aya, 40 tafseer and translation, hadith, qibla...etc, also created a video tutorial for the quran section</p>
-                        <p> <a href="https://www.youtube.com/watch?v=s_6cvcFVP54" target="_blank" class="cta">video</a>
-                            <a href="https://drive.google.com/drive/folders/1WsFCFsHObbF4--v2sfog8ig8yzigSSoh" target="_blank" class="cta">Apk</a></p>
-                    </div>
-                    <div class="project-img">
-                        <img src="images/projImages/photo12.png" alt="img">
-                    </div>
-                </div>
-                <div class="project-item">
-                    <div class="project-info">
-                        <h1>Project 13</h1>
-                        <h2>SurveyMate</h2>
-                        <p>Created an Application that allows users to earn from surveys and offers, a fully function app and backend were created by me, the app was on google play and acuired more than 100k downloads, used many sdks and native code in the
-                            app
-                        </p>
-                        <a href="https://play.google.com/store/apps/details?id=com.surveymate" target="_blank" class="cta">Apk</a>
-                    </div>
-                    <div class="project-img">
-                        <img src="images/projImages/photo13.png" alt="img">
-                    </div>
-                </div>
-                <div class="project-item">
-                    <div class="project-info">
-                        <h1>Project 14</h1>
-                        <h2>Al huda - quran app</h2>
-                        <p>a Quran app using the qcf fonts which are 604 font to generate quran with the same alignment of real quran, with many features like audio playing, sharing ayahs as images, many tafseers...etc
-                        </p>
-                        <a href="https://play.google.com/store/apps/details?id=com.Huda.quran.app" target="_blank" class="cta">Android</a>
-                        <a href="https://apps.apple.com/us/app/al-huda-quran-app/id6745104162?uo=2" target="_blank" class="cta">Ios</a>
-                    </div>
-                    <div class="project-img">
-                        <img src="images/projImages/photo14.png" alt="img">
+                <div class="project-info">
+                    <h3>Project 1</h3>
+                    <h4>Wordpress App</h4>
+                    <p>An app that fetches data from a WordPress blog via API, featuring multi-theme, multi-language, Firebase push notifications, OneSignal notifications, and more.</p>
+                    <div class="project-links">
+                        <a href="https://drive.google.com/file/d/1zr0fmcaJxRU8CR4JfayvfTAG0bsINJHi/view?fbclid=IwAR24DWmngqMLmPTNIphCDXZUyU0KDQYz0m9W8ygmW2N3Hjt4xud5DdBPcLU" target="_blank" class="btn">APK</a>
                     </div>
                 </div>
             </div>
-    </section>
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="images/projImages/photo2.jpg" alt="Flutter Login UI Kit Screenshot" />
+                </div>
+                <div class="project-info">
+                    <h3>Project 2</h3>
+                    <h4>Flutter Login UI Kit</h4>
+                    <p>Developed 8 Flutter login UI designs ready for integration with backend services like Firebase Authentication or other alternatives.</p>
+                    <div class="project-links">
+                        <a href="https://drive.google.com/file/d/1yDr-ntehkuQ6v6plJotpEBTNk-eK4b0W/view?usp=sharing" target="_blank" class="btn">APK</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="images/projImages/photo3.jpg" alt="News API App Screenshot" />
+                </div>
+                <div class="project-info">
+                    <h3>Project 3</h3>
+                    <h4>News API App</h4>
+                    <p>An app using NewsAPI.org to fetch and display news by category or keyword search, with WebView for full articles.</p>
+                    <div class="project-links">
+                        <a href="https://drive.google.com/file/d/12GWMGNu0CbrtUL3sApXcNH9_pvl-iEWa/view?usp=sharing" target="_blank" class="btn">APK</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="images/projImages/photo4.jpg" alt="MyApps Website App Screenshot" />
+                </div>
+                <div class="project-info">
+                    <h3>Project 4</h3>
+                    <h4>MyApps Website App</h4>
+                    <p>An app for a client based on www.myapps.cc API, designed to fetch data, launch URLs, display animations, and show AdMob ads.</p>
+                    <div class="project-links">
+                        <a href="https://play.google.com/store/apps/details?id=com.myappsappforsaud.demo" target="_blank" class="btn">APK</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="images/projImages/photo5.jpg" alt="World Map App Screenshot" />
+                </div>
+                <div class="project-info">
+                    <h3>Project 5</h3>
+                    <h4>World Map App</h4>
+                    <p>An app using the REST Countries API to display country data, including size, capital, and location via Google Maps API.</p>
+                    <div class="project-links">
+                        <a href="https://drive.google.com/file/d/1StXsmp10egpQgOjlz8rLgX6Yf7V7YcxO/view?usp=sharing" target="_blank" class="btn">APK</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="images/projImages/photo6.jpg" alt="Quraan MP3 App Screenshot" />
+                </div>
+                <div class="project-info">
+                    <h3>Project 6</h3>
+                    <h4>Quraan MP3 App</h4>
+                    <p>An app for a client to play MP3 Quran for 120 reciters using mp3quran.net API, with interstitial ads and PayPal donation via URL.</p>
+                    <div class="project-links">
+                        <a href="https://mega.nz/file/AwUgAbaJ?fbclid=IwAR3KzOS33a4nlE0_5qsbeH0uEbjqTbQLw7wPbHMhHmADBL3qX8za3BfG-nw#NZmnEdlv-aOAT2x_vHpyHWJ3rFAVX0PaxqWoSO-Dp_g" target="_blank" class="btn">APK</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="images/projImages/photo7.jpg" alt="Pets App Screenshot" />
+                </div>
+                <div class="project-info">
+                    <h3>Project 7</h3>
+                    <h4>Pets App</h4>
+                    <p>An app displaying information about pets, clinics, doctors, and products for pet owners.</p>
+                    <div class="project-links">
+                        <a href="https://drive.google.com/file/d/15CeH49e87Hn87H1RH4-zDP8cAdwdzC84/view?usp=sharing" target="_blank" class="btn">APK</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="images/projImages/photo8.jpg" alt="E-Commerce App Screenshot" />
+                </div>
+                <div class="project-info">
+                    <h3>Project 8</h3>
+                    <h4>E-Commerce App</h4>
+                    <p>A practice app with a Node.js API backend and Flutter frontend, both developed by me, for e-commerce functionality.</p>
+                    <div class="project-links">
+                        <a href="https://drive.google.com/file/d/1fWH5XRQO6kvncHVbFesddSR1Qd1vwvtG/view?fbclid=IwAR3Dvb5JB0KexaawRt08x-K7gPar71HCZETCu7AnTy7giumUw2SqpunD57U" target="_blank" class="btn">APK</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="images/projImages/photo9.jpg" alt="HomeMeals App Screenshot" />
+                </div>
+                <div class="project-info">
+                    <h3>Project 9</h3>
+                    <h4>HomeMeals App</h4>
+                    <p>An app for a client to order food, based on their website’s API and functionality.</p>
+                    <div class="project-links">
+                        <a href="https://drive.google.com/file/d/16fTFkr0Jq2JYpMZCt3k7XezrnyIwYeIB/view" target="_blank" class="btn">APK</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="images/projImages/photo10.jpg" alt="Novels App Screenshot" />
+                </div>
+                <div class="project-info">
+                    <h3>Project 10</h3>
+                    <h4>Novels App for Islam Mahmoud</h4>
+                    <p>An app for novelist Islam Mahmoud with a Node.js API, admin app for managing novels, rewarded ads, and a referral system.</p>
+                    <div class="project-links">
+                        <a href="https://play.google.com/store/apps/details?id=com.app.rewayat_alkateb_islam" target="_blank" class="btn">APK</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="images/projImages/photo11.PNG" alt="Wallpaper App Screenshot" />
+                </div>
+                <div class="project-info">
+                    <h3>Project 11</h3>
+                    <h4>Wallpaper App</h4>
+                    <p>An app and API to fetch wallpapers from Unsplash, Pexels, and Reddit, published on my Google Play account.</p>
+                    <div class="project-links">
+                        <a href="https://play.google.com/store/apps/details?id=com.wool" target="_blank" class="btn">APK</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="images/projImages/photo12.png" alt="Skoon Islamic App Screenshot" />
+                </div>
+                <div class="project-info">
+                    <h3>Project 12</h3>
+                    <h4>Skoon Islamic App</h4>
+                    <p>An Islamic app with Quran, 40 tafseers, translations, hadith, Qibla, and a video tutorial for the Quran section.</p>
+                    <div class="project-links">
+                        <a href="https://www.youtube.com/watch?v=s_6cvcFVP54" target="_blank" class="btn">Video</a>
+                        <a href="https://drive.google.com/drive/folders/1WsFCFsHObbF4--v2sfog8ig8yzigSSoh" target="_blank" class="btn">APK</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="images/projImages/photo13.png" alt="SurveyMate App Screenshot" />
+                </div>
+                <div class="project-info">
+                    <h3>Project 13</h3>
+                    <h4>SurveyMate</h4>
+                    <p>An app for earning via surveys and offers, with a custom backend and SDKs, achieving over 100k downloads on Google Play.</p>
+                    <div class="project-links">
+                        <a href="https://play.google.com/store/apps/details?id=com.surveymate" target="_blank" class="btn">APK</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="images/projImages/photo14.png" alt="Al Huda Quran App Screenshot" />
+                </div>
+                <div class="project-info">
+                    <h3>Project 14</h3>
+                    <h4>Al Huda Quran App</h4>
+                    <p>A Quran app using QCF fonts for accurate alignment, with audio, ayah sharing, multiple tafseers, and cross-platform support.</p>
+                    <div class="project-links">
+                        <a href="https://play.google.com/store/apps/details?id=com.Huda.quran.app" target="_blank" class="btn">Android</a>
+                        <a href="https://apps.apple.com/us/app/al-huda-quran-app/id6745104162?uo=2" target="_blank" class="btn">iOS</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
     <!-- End Projects Section -->
-
-    <!-- About Section -->
-    <section id="about">
-        <div class="about container">
-            <div class="col-left">
-                <div class="about-img">
-                    <img src="images/mahmoud.jpeg" alt="img">
-                </div>
+<!-- About Section -->
+<section id="about" class="about">
+    <div class="container">
+        <div class="about-content">
+            <div class="about-image">
+                <img src="images/mahmoud.jpeg" alt="Mahmoud Atef Portrait" />
             </div>
-            <div class="col-right">
-                <h1 class="section-title">About <span>me</span></h1>
-                <h2>Flutter Developer</h2>
-                <p>i am a flutter developer with about a 4 years of experience. !
-                </p>
-                <h2>Backend Developer</h2>
-                <p>i am a node js developer i am experienced at developing rest apis using express And mongodb!
-                </p>
-                <h2>Additional skills</h2>
-                <p>i have perior knowledge of several languages like : c++, java, html, css, python, javascript and dart. i have a lot of computer skills including: using photoshop, using video editing software, and using audio processing software !
-                </p>
+            <div class="about-text">
+                <h2 class="section-title">About <span>Me</span></h2>
+                <h3>Flutter Developer</h3>
+                <p>I am a Flutter developer with over 4 years of experience, crafting cross-platform mobile applications with modern UI/UX and robust performance.</p>
+                <h3>Backend Developer</h3>
+                <p>I specialize in Node.js, building scalable REST APIs using Express and MongoDB for seamless backend integration.</p>
+                <h3>Additional Skills</h3>
+                <p>I have expertise in multiple languages including C++, Java, HTML, CSS, Python, JavaScript, and Dart. I’m also skilled in Photoshop, video editing, and audio processing software.</p>
                 <a href="https://drive.google.com/file/d/1jS1oLskZDagqOH0HywGsNEw_qTpHnxv0/view?usp=sharing" target="_blank" class="cta">Download Resume</a>
             </div>
         </div>
-    </section>
-    <!-- End About Section -->
+    </div>
+</section>
+<!-- End About Section -->
 
     <!-- Contact Section -->
-    <section id="contact">
-        <div class="contact container">
-            <div>
-                <h1 class="section-title">Contact <span>info</span></h1>
+  <!-- Contact Section -->
+<section id="contact" class="contact">
+    <div class="container">
+        <div>
+            <h1 class="section-title">Contact <span>info</span></h1>
+        </div>
+        <div class="contact-grid">
+            <div class="contact-card">
+                <div class="contact-icon"><img src="https://img.icons8.com/bubbles/100/000000/phone.png" alt="Phone Icon" /></div>
+                <div class="contact-info">
+                    <h3>Phone</h3>
+                    <p>+20 1212460886</p>
+                    <p>+20 1024172141 (WhatsApp)</p>
+                </div>
             </div>
-            <div class="contact-items">
-                <div class="contact-item">
-                    <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/phone.png" /></div>
-                    <div class="contact-info">
-                        <h1>Phone</h1>
-                        <h2>+20 1212460886 </h2>
-                        <h2>+20 1024172141 "whatsapp" </h2>
-
-                    </div>
+            <div class="contact-card">
+                <div class="contact-icon"><img src="https://img.icons8.com/bubbles/100/000000/new-post.png" alt="Email Icon" /></div>
+                <div class="contact-info">
+                    <h3>Email</h3>
+                    <p>m4hmoudatef@gmail.com</p>
+                    <p>hodaatef454@gmail.com</p>
                 </div>
-                <div class="contact-item">
-                    <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/new-post.png" /></div>
-                    <div class="contact-info">
-                        <h1>Email</h1>
-                        <h2>m4hmoudatef@gmail.com</h2>
-                        <h2>hodaatef454@gmail.com</h2>
-                    </div>
-                </div>
-                <div class="contact-item">
-                    <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/map-marker.png" /></div>
-                    <div class="contact-info">
-                        <h1>Address</h1>
-                        <h2>Egypt, qalubia,benha</h2>
-                    </div>
+            </div>
+            <div class="contact-card">
+                <div class="contact-icon"><img src="https://img.icons8.com/bubbles/100/000000/map-marker.png" alt="Address Icon" /></div>
+                <div class="contact-info">
+                    <h3>Address</h3>
+                    <p>Egypt, Qalubia, Benha</p>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+  </section>
     <!-- End Contact Section -->
-
-    <!-- Footer -->
-    <section id="footer">
-        <div class="footer container">
-            <div class="brand">
-                <h1><span>M</span>ahmoud <span>A</span>tef</h1>
-            </div>
-            <h2>Your Complete App Solution</h2>
-            <div class="social-icon">
-                <div class="social-item">
-                    <a href="https://www.facebook.com/profile.php?id=100041005143683" target="_blank"><img src="https://img.icons8.com/bubbles/100/000000/facebook-new.png" /></a>
-                </div>
-                <div class="social-item">
-                    <a href="https://github.com/Epic-Apps-Hub" target="_blank"><img src="https://img.icons8.com/bubbles/50/000000/github.png" /></a>
-                </div>
-                <div class="social-item">
-                    <a href="https://www.linkedin.com/in/mahmoud-atef-5753051b8" target="_blank"><img src="https://img.icons8.com/bubbles/50/000000/linkedin.png" /></a>
-                </div>
-                <div class="social-item">
-                    <a href="https://www.youtube.com/@m4hmoud-atef" target="_blank"><img src="https://img.icons8.com/bubbles/50/000000/youtube.png" /></a>
-                </div>
-            </div>
-            <p>Copyright © 2020 Mahmoud Atef. All rights reserved</p>
+<!-- Footer -->
+<section id="footer" class="footer">
+    <div class="container">
+        <div class="brand">
+            <h1><span>M</span>ahmoud <span>A</span>tef</h1>
         </div>
-    </section>
+        <h2>Your Complete App Solution</h2>
+        <div class="social-links">
+            <a href="https://www.facebook.com/profile.php?id=100041005143683" target="_blank">
+                <img src="https://img.icons8.com/bubbles/100/000000/facebook-new.png" alt="Facebook" />
+            </a>
+            <a href="https://github.com/Epic-Apps-Hub" target="_blank">
+                <img src="https://img.icons8.com/bubbles/50/000000/github.png" alt="GitHub" />
+            </a>
+            <a href="https://www.linkedin.com/in/mahmoud-atef-5753051b8" target="_blank">
+                <img src="https://img.icons8.com/bubbles/50/000000/linkedin.png" alt="LinkedIn" />
+            </a>
+            <a href="https://www.youtube.com/@m4hmoud-atef" target="_blank">
+                <img src="https://img.icons8.com/bubbles/50/000000/youtube.png" alt="YouTube" />
+            </a>
+        </div>
+        <p class="footer-text">Copyright © 2020 Mahmoud Atef. All rights reserved</p>
+    </div>
+</section>
+<!-- End Footer -->
     <!-- End Footer -->
     <script src="./app.js"></script>
 </body>
