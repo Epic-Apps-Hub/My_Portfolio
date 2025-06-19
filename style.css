@@ -22,6 +22,10 @@
 	--shadow-strong: rgba(0, 255, 136, 0.3);
 }
 
+html, body {
+	height: 100%;
+}
+
 body {
 	background-color: var(--bg-primary);
 	color: var(--text-primary);
@@ -323,22 +327,27 @@ nav {
   justify-content: space-between;
   align-items: center;
   background: var(--bg-card);
+  z-index: 1101;
 }
 
 .resume-viewer {
   padding: 0;
   width: 100vw;
-  height: calc(100vh - 60px); /* 60px for header */
+  height: 100vh;
   display: flex;
   align-items: stretch;
   justify-content: stretch;
   background: var(--bg-primary);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1100;
 }
 
 .resume-viewer embed,
 .resume-viewer iframe {
   width: 100vw;
-  height: 100%;
+  height: 100vh;
   border: none;
   background: var(--bg-primary);
   display: block;
@@ -352,7 +361,7 @@ nav {
   color: var(--text-primary);
   cursor: pointer;
   transition: color 0.3s ease;
-  z-index: 1100;
+  z-index: 1200;
 }
 
 .close-modal:hover {
